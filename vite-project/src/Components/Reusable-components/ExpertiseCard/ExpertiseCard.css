@@ -1,0 +1,50 @@
+.card {
+	background-color: #ffffff;
+	padding: 20px;
+	width: calc(50% - 15px);
+	height: auto;
+	margin-bottom: 2rem;
+	border: 3px solid transparent;
+	animation: borderAnimation 4s infinite linear;
+}
+
+.text-wrapper {
+	font-family: "Heebo-Bold", Helvetica;
+	font-size: 22px;
+	font-weight: 700;
+	color: #21243d;
+}
+
+.description {
+	font-family: "Heebo-Regular", Helvetica;
+	font-size: 16px;
+	font-weight: 400;
+	margin-top: 10px;
+	color: #21243d;
+}
+
+@keyframes borderAnimation {
+	0% {
+		border-image-slice: 1;
+		border-image-source: linear-gradient(45deg, #ff6b6b, #556270);
+	}
+
+	50% {
+		border-image-slice: 1;
+		border-image-source: linear-gradient(45deg, #4ecdc4, #556270);
+	}
+
+	100% {
+		border-image-slice: 1;
+		border-image-source: linear-gradient(45deg, #556270, #ff6b6b);
+	}
+}
+
+/* Media Query for Responsive Design */
+
+@media screen and (max-width: 768px) {
+	.card {
+		width: 100%;
+		margin-bottom: 1rem;
+	}
+}
