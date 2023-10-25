@@ -1,0 +1,29 @@
+.typing-effect {
+	font-family: "Heebo-Bold", Helvetica;
+	font-size: 1.2rem;
+	font-weight: 700;
+	color: #333;
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+	display: inline-block;
+	margin: 0 auto;
+}
+
+.caret {
+	animation: blink-caret 0.75s step-end infinite;
+	color: gray;
+	font-size: 1.5rem;
+}
+
+@keyframes blink-caret {
+
+	from,
+	to {
+		opacity: 0;
+	}
+
+	10% {
+		opacity: 1;
+	}
+}
