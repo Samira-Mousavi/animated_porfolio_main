@@ -1,0 +1,80 @@
+.hero {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: 1rem;
+	line-height: 1.5rem;
+	min-height: 100vh;
+}
+
+.aboutme {
+	font-size: 1.5rem;
+	font-weight: 700;
+	font-family: "Heebo-Bold", Helvetica;
+	color: #333;
+}
+
+.about-me,
+.aboutme,
+.b {
+	position: static;
+	height: auto;
+	text-align: left;
+}
+
+.bold-text {
+	margin-left: 1.2rem;
+	padding: 1rem 0;
+	width: fit-content;
+	line-height: 1.5rem;
+}
+
+.samira-mousavi {
+	color: #bc1b1b;
+}
+
+.passionate-about-turning {
+	color: #21243d;
+	font-family: "Heebo-Regular", Helvetica;
+	margin-left: 1.2rem;
+	margin-top: 0.5rem;
+	font-size: 1.2rem;
+	line-height: 1.8rem;
+}
+
+.about-me {
+	width: 30rem;
+}
+
+/* Media Query for Responsive Design */
+
+@media (max-width: 768px) {
+	.hero {
+		flex-direction: column-reverse;
+		background-position: center;
+		background-size: cover;
+		min-height: 90vh;
+		padding-top: 2rem;
+	}
+
+	.about-me {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		padding-bottom: 2rem;
+	}
+
+	.about-me,
+	.aboutme,
+	.b {
+		position: static;
+		width: 100%;
+		height: auto;
+		text-align: left;
+	}
+
+	.container,
+	.passionate-about-turning {
+		margin-left: 1.2rem;
+	}
+}
