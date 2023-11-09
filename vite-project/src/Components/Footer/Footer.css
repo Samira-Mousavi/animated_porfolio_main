@@ -1,0 +1,51 @@
+.footer {
+	background-color: #ffffff;
+	height: 10rem;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.footer .icons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2.2rem;
+	list-style: none;
+}
+
+.footer .icons .icon {
+	height: 2rem;
+	width: 2rem;
+}
+
+.footer .copyright {
+	font-family: "Heebo-Regular", Helvetica;
+	font-size: 1rem;
+	font-weight: 400;
+	text-align: center;
+	margin-top: 1rem;
+	width: 100%;
+}
+
+/* Media Query for Responsive Design */
+
+@media screen and (max-width: 768px) {
+	.footer .icons {
+		gap: 1.5rem;
+	}
+
+	.footer .icons icon {
+		height: 0.5rem;
+		width: 0.5rem;
+	}
+
+	.footer .copyright {
+		font-size: 0.8rem;
+	}
+}
