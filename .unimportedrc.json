@@ -1,0 +1,13 @@
+{
+	"ignoreUnresolved": [],
+	"ignoreUnused": [
+		"@react-three/drei",
+		"react-axios",
+		"react-particles",
+		"react-three-fiber",
+		"three-subdivision-modifier"
+	],
+	"ignoreUnimported": [
+		"src/components/DownloadButton.jsx"
+	]
+}
